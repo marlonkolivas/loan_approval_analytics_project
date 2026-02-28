@@ -11,12 +11,14 @@ Dataset link:
 [Loan Approval Dataset](https://www.kaggle.com/datasets/amineipad/loan-approval-dataset)
   
 #### Day 1 - Data Preparation & Feature Engineering (MySQL)
+Focused on building a structured and reproducible data pipeline in MySQL to transform raw CSV data into an analytics-ready dataset for dashboarding and KPI analysis.<br>
 #### Day 2 – Interactive Tableau Dashboard & Insight Development
+Translated the cleaned SQL dataset into a professional Tableau dashboard to analyze loan approval performance and identify key approval drivers.
 
 This project analyzes a loan approval dataset to evaluate how applicant characteristics such as credit score, income, and employment status influence loan approval outcomes.
 
-**Day 1** focused on building a structured and reproducible data pipeline in MySQL to transform raw CSV data into an analytics-ready dataset for dashboarding and KPI analysis.<br>
-**Day 2** translated the cleaned SQL dataset into a professional Tableau dashboard to analyze loan approval performance and identify key approval drivers.
+
+
 
 ### Day 1 Objectives
 
