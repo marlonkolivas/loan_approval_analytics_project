@@ -10,11 +10,13 @@ This project uses the Loan Approval Dataset from Kaggle.
 Dataset link:
 [Loan Approval Dataset](https://www.kaggle.com/datasets/amineipad/loan-approval-dataset)
   
-## Day 1 - Data Preparation & Feature Engineering (MySQL)
+#### Day 1 - Data Preparation & Feature Engineering (MySQL)
+#### Day 2 – Interactive Tableau Dashboard & Insight Development
 
 This project analyzes a loan approval dataset to evaluate how applicant characteristics such as credit score, income, and employment status influence loan approval outcomes.
 
-**Day 1** focused on building a structured and reproducible data pipeline in MySQL to transform raw CSV data into an analytics-ready dataset for dashboarding and KPI analysis.
+**Day 1** focused on building a structured and reproducible data pipeline in MySQL to transform raw CSV data into an analytics-ready dataset for dashboarding and KPI analysis.<br>
+**Day 2** translated the cleaned SQL dataset into a professional Tableau dashboard to analyze loan approval performance and identify key approval drivers.
 
 ### Day 1 Objectives
 
@@ -91,3 +93,33 @@ Indexes created on:
 - annual_income
 
 Improves filtering and aggregation performance for dashboard queries.
+
+### Dashboard Highlights
+
+**KPIs**
+- Total Applications: 1,000
+- Total Approved: 729
+- Approval Rate: 72.9%
+
+**Segmented Analysis**
+- Approval Rate by Credit Risk Segment
+- Approval Rate by Income Segment
+- Approval Rate by Employment Status
+
+**Interactivity**
+- Employment Status dropdown filter applied across all visuals
+
+#### Key Findings
+- Credit score is the strongest approval driver, with a 37-point gap between Very Good (94%) and Poor (57%) segments.
+- Employment stability significantly impacts outcomes, with unemployed applicants showing materially lower approval rates (~51%).
+- Income acts primarily as a threshold factor, with approval rates similar for middle and high income segments but sharply lower for low income applicants.
+- Overall approval rate of 72.9% suggests moderate risk tolerance.
+
+#### Interactive Dashboard
+
+View the dashboard here: <br>
+[Loan Approval Performance Dashboard](https://public.tableau.com/app/profile/marlon.kolivas/viz/LoanApprovalOverview/LoanApprovalOverview)
+
+Tools
+- MySQL (data preparation & feature engineering)
+- Tableau Public (dashboard development)
