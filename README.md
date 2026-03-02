@@ -14,10 +14,10 @@ Dataset link:
 Focused on building a structured and reproducible data pipeline in MySQL to transform raw CSV data into an analytics-ready dataset for dashboarding and KPI analysis.<br>
 #### Day 2 – Interactive Tableau Dashboard & Insight Development
 Translated the cleaned SQL dataset into a professional Tableau dashboard to analyze loan approval performance and identify key approval drivers.
+#### Day 3 Predictive Modeling & Model Interpretation
+Developed an interpretable logistic regression model to predict loan approval outcomes and validate whether financial and credit-related factors identified in earlier analysis significantly influence approval decisions.
 
 This project analyzes a loan approval dataset to evaluate how applicant characteristics such as credit score, income, and employment status influence loan approval outcomes.
-
-
 
 
 ### Day 1 Objectives
@@ -125,3 +125,33 @@ View the dashboard here: <br>
 Tools
 - MySQL (data preparation & feature engineering)
 - Tableau Public (dashboard development)
+
+### Loan Approval Prediction Model
+
+**Approach**
+
+- Logistic Regression (binary classification)
+- 80/20 stratified train-test split
+- Feature engineering: loan-to-income ratio, log-transformed income and loan amount
+- One-hot encoding for categorical variables
+- Standardization of numerical features
+
+**Performance**
+
+- Accuracy: 89.5%
+- Precision: 90.3%
+- Recall: 95.9%
+- F1 Score: 0.930
+- ROC-AUC: 0.962
+
+The model demonstrates excellent discrimination ability and strong balance between capturing qualified applicants and limiting incorrect approvals.
+
+**Key Insights**
+
+Approval decisions are primarily driven by employment stability, credit score, income strength, and financial burden (dependents, existing loans, loan-to-income ratio). Feature engineering improved model discrimination (ROC-AUC from 0.949 to 0.962), confirming the value of engineered financial ratios and nonlinear transformations.
+
+### ROC Curve Analysis
+
+<img width="700" height="559" alt="image" src="https://github.com/user-attachments/assets/ea0a8f40-14ae-4fb2-bd23-ea92a10976a9" />
+
+The model demonstrates excellent discrimination ability (AUC = 0.962), effectively separating approved and rejected applicants.
